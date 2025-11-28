@@ -167,7 +167,7 @@
                     <option value="private">Tour riêng</option>
                 </select>
 
-                <input type="date" name="date" class="w-full p-2 border rounded">
+                <input type="date" id="myDate" name="date" class="w-full p-2 border rounded">
                 <input type="number" name="pax" id="paxInput" placeholder="Số lượng khách" min="1"
                     class="w-full p-2 border rounded">
 
@@ -212,18 +212,18 @@
                 name: "Làng cổ Phước Tích",
                 story: "Phước Tích là làng cổ nằm bên bờ sông Hương, nổi tiếng với kiến trúc nhà cổ hàng trăm năm tuổi và những giá trị văn hóa truyền thống còn lưu giữ. Dạo quanh làng, bạn sẽ thấy những ngôi nhà mái ngói rêu phong, con đường lát gạch đỏ, và nghe những câu chuyện lịch sử được người dân truyền lại qua nhiều thế hệ. Tour Phước Tích giúp du khách trải nghiệm nghề thủ công truyền thống, thưởng thức ẩm thực Huế đậm đà, và cảm nhận nhịp sống chậm rãi, thanh bình của làng quê xưa.",
                 schedule: `<b>Ngày 1</b><br>
-                            • 7:00–7:30: Đón khách tại khách sạn<br>
-                            • 8:30–11:30: Tham quan làng<br>
-                            • 13:00–16:00: Workshop làm gốm<br>
-                            • 16:00–18:00: Nghỉ ngơi, check-in, tự do tham quan quanh làng<br>
-                            • 18:30–20:00: Ăn tối và trải nghiệm văn hóa tại nhà dân<br>
+                            •  7:00 – 7:30: Đón khách tại khách sạn<br>
+                            •  8:30 – 11:30: Tham quan làng<br>
+                            • 13:00 – 16:00: Workshop làm gốm<br>
+                            • 16:00 – 18:00: Nghỉ ngơi, check-in, tự do tham quan quanh làng<br>
+                            • 18:30 – 20:00: Ăn tối và trải nghiệm văn hóa tại nhà dân<br>
                             • 20:00: Nghỉ đêm tại nhà dân<br><br>
 
                             <b>Ngày 2</b><br>
-                            • 6:30–7:30: Ăn sáng tại nhà dân<br>
-                            • 7:30–10:30: Hoạt động trải nghiệm buổi sáng, dạo làng, chụp ảnh<br>
-                            • 10:30–11:00: Khởi hành về Huế<br>
-                            • 11:30–12:00: Kết thúc hành trình`,
+                            •  6:30 – 7:30: Ăn sáng tại nhà dân<br>
+                            •  7:30 – 10:30: Hoạt động trải nghiệm buổi sáng, dạo làng, chụp ảnh<br>
+                            • 10:30 – 11:00: Khởi hành về Huế<br>
+                            • 11:30 – 12:00: Kết thúc hành trình`,
                 images: [
                     "phuoctich1.jpg",
                     "phuoctich2.jpg",
@@ -234,17 +234,50 @@
             baola: {
                 name: "Làng mây tre đan Bao La",
                 story: "Làng Bao La là điểm đến của những sản phẩm mây tre đan tinh xảo, từ giỏ, nón, đến đồ trang trí. Nghề mây tre đan đã được truyền lại từ nhiều thế hệ, nơi bàn tay khéo léo của người thợ biến những vật liệu giản dị thành tác phẩm nghệ thuật. Khi tham gia tour, du khách sẽ được trải nghiệm tự tay đan các sản phẩm, tìm hiểu kỹ thuật tạo hình, và cảm nhận sự kiên nhẫn, tỉ mỉ trong từng đường nét.",
-                schedule: "7:00–7:30: Đón khách<br>8:30–11:30: Tham quan làng Bao La, xem quy trình mây tre đan, trò chuyện cùng người dân<br>11:30 – 12:30: Ăn trưa tại nhà dân<br>13:00 – 14:30: Workshop làm sản phẩm mây tre đan<br>14:30 – 15:30: Tham quan tự do, chụp ảnh<br>15:30 – 16:00:Kết thúc hành trình"
+                schedule: `
+                •  7:00 – 7:30: Đón khách<br>
+                •  8:30 – 11:30: Tham quan làng Bao La, xem quy trình mây tre đan, trò chuyện cùng người dân<br>
+                • 11:30 – 12:30: Ăn trưa tại nhà dân<br>
+                • 13:00 – 14:30: Workshop làm sản phẩm mây tre đan<br>
+                • 14:30 – 15:30: Tham quan tự do, chụp ảnh<br>
+                • 15:30 – 16:00: Kết thúc hành trình`,
+                images: [
+                    "baola1.jpg",
+                    "baola2.jpg",
+                    "baola3.jpg"
+                ]
             },
             lanhsinh: {
                 name: "Làng Sình",
                 story: "Làng Sình, nằm ven sông Hương ở Huế, nổi tiếng với nghề làm tranh truyền thống. Nghệ nhân nơi đây vẫn gìn giữ kỹ thuật vẽ tranh tinh xảo bằng các chất liệu tự nhiên, tạo nên những tác phẩm mang đậm vẻ đẹp mộc mạc và văn hóa Huế. Khi đến thăm làng, du khách có thể chiêm ngưỡng những bức tranh độc đáo, tìm hiểu quy trình chế tác truyền thống, và thậm chí tự tay trải nghiệm làm tranh, cảm nhận nhịp sống yên bình của làng quê và tâm hồn nghệ thuật của người dân địa phương.",
-                schedule: "7:00–7:30: Đón khách<br>8:30–11:30: Tham quan làng Sình, xem quy trình làm tranh và trò chuyện cùng nghệ nhân<br>11:30 – 12:30: Ăn trưa tại nhà dân<br>13:00 – 14:30: Workshop làm tranh<br>14:30 – 15:30: Tham quan tự do<br>15:30 – 16:00: Đưa khách về điểm đón"
+                schedule: `
+                •  7:00 – 7:30: Đón khách<br>
+                •  8:30 – 11:30: Tham quan làng Sình, xem quy trình làm tranh và trò chuyện cùng nghệ nhân<br>
+                • 11:30 – 12:30: Ăn trưa tại nhà dân<br>
+                • 13:00 – 14:30: Workshop làm tranh<br>
+                • 14:30 – 15:30: Tham quan tự do<br>
+                • 15:30 – 16:00: Đưa khách về điểm đón"`,
+                images: [
+                    "langsinh1.jpg",
+                    "langsinh2.jpg",
+                    "langsinh3.jpg"
+                ]
             },
             thanhtien: {
                 name: "Làng hoa giấy Thanh Tiên",
                 story: "Làng hoa giấy Thanh Tiên nổi tiếng với những bông hoa giấy đủ màu sắc, sống động như hoa thật. Nghề làm hoa giấy là sự kết hợp giữa nghệ thuật và thủ công, từ chọn giấy, nhuộm màu, tạo cánh hoa cho đến ghép thành từng bó. Tham gia tour Thanh Tiên, du khách sẽ được học cách làm một bông hoa giấy, khám phá sự sáng tạo và tỉ mỉ trong từng chi tiết, đồng thời tận hưởng không khí yên bình của làng quê.",
-                schedule: "7:00–7:30: Đón khách<br>8:30–11:30: Tham quan làng Thanh Tiên, xem quá trình làm hoa giấy, trò chuyện cùng nghệ nhân<br>11:30 – 12:30: Ăn trưa tại nhà dân<br>13:00 – 14:30: Workshop làm hoa giấy<br>14:30 – 15:30: Tham quan tự do<br>15:30 – 16:00: Đưa khách về điểm đón"
+                schedule: `
+                •  7:00 – 7:30: Đón khách<br>
+                •  8:30 – 11:30: Tham quan làng Thanh Tiên, xem quá trình làm hoa giấy, trò chuyện cùng nghệ nhân<br>
+                • 11:30 – 12:30: Ăn trưa tại nhà dân<br>
+                • 13:00 – 14:30: Workshop làm hoa giấy<br>
+                • 14:30 – 15:30: Tham quan tự do<br>
+                • 15:30 – 16:00: Đưa khách về điểm đón"`,
+                images: [
+                    "thanhtien1.jpg",
+                    "thanhtien2.jpg",
+                    "thanhtien3.jpg"
+                ]
             }
         };
 
@@ -314,6 +347,15 @@
 
         // Khởi tạo khi trang load xong
         document.addEventListener("DOMContentLoaded", function () {
+
+            const today = new Date();
+            today.setDate(today.getDate() + 1);
+
+            const year = today.getFullYear();
+            const month = String(today.getMonth() + 1).padStart(2, '0');
+            const day = String(today.getDate()).padStart(2, '0');
+
+            document.getElementById('myDate').min = `${year}-${month}-${day}`;
             // Lắng nghe thay đổi
             document.getElementById("tourSelect").addEventListener("change", updatePrice);
             document.getElementById("tourType").addEventListener("change", updatePrice);
