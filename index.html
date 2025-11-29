@@ -57,6 +57,7 @@
             <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-md p-4">
                 <img src="phuoctich.jpg" alt="Làng cổ Phước Tích" class="w-full h-48 object-cover rounded-lg mb-2">
                 <h3 class="font-semibold">Làng cổ Phước Tích</h3>
+                <p class="text-sm mt-2">Tour 1 ngày 1 đêm</p>
                 <p class="text-sm mt-2">Giá: 1.640.000 VND</p>
                 <div class="mt-4 flex gap-2">
                     <button onclick="openTour('phuoctich')" class="text-sm px-3 py-1 rounded bg-[#f3e6d9] border">Chi
@@ -69,6 +70,7 @@
             <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-md p-4">
                 <img src="baola.jpg" alt="Làng mây đan Bao La" class="w-full h-48 object-cover rounded-lg mb-2">
                 <h3 class="font-semibold">Làng mây tre đan Bao La</h3>
+                <p class="text-sm mt-2">Tour 1 ngày</p>
                 <p class="text-sm mt-2">Giá: 430.000 VND</p>
                 <div class="mt-4 flex gap-2">
                     <button onclick="openTour('baola')" class="text-sm px-3 py-1 rounded bg-[#f3e6d9] border">Chi
@@ -81,6 +83,7 @@
             <div class="bg-white rounded-xl overflow-hidden shadow hover:shadow-md p-4">
                 <img src="langsinh.jpg" alt="Làng Sình" class="w-full h-48 object-cover rounded-lg mb-2">
                 <h3 class="font-semibold">Làng Sình</h3>
+                <p class="text-sm mt-2">Tour 1 ngày</p>
                 <p class="text-sm mt-2">Giá: 410.000 VND</p>
                 <div class="mt-4 flex gap-2">
                     <button onclick="openTour('lanhsinh')" class="text-sm px-3 py-1 rounded bg-[#f3e6d9] border">Chi
@@ -94,6 +97,7 @@
                 <img src="thanhtien.jpg" alt="Làng hoa giấy Thanh Tiên"
                     class="w-full h-48 object-cover rounded-lg mb-2">
                 <h3 class="font-semibold">Làng hoa giấy Thanh Tiên</h3>
+                <p class="text-sm mt-2">Tour 1 ngày</p>
                 <p class="text-sm mt-2">Giá: 530.000 VND</p>
                 <div class="mt-4 flex gap-2">
                     <button onclick="openTour('thanhtien')" class="text-sm px-3 py-1 rounded bg-[#f3e6d9] border">Chi
@@ -109,16 +113,24 @@
     <section id="about" class="max-w-6xl mx-auto p-6 mt-10">
         <h2 class="text-2xl font-bold mb-4">Về chúng tôi</h2>
         <p class="bg-white p-6 rounded-xl shadow">
-            “Về Làng” là dự án du lịch trải nghiệm văn hoá – làng nghề tại miền Trung, mang đến mô hình du lịch đắm chìm
-            nơi du khách làm cùng – ăn cùng – sống cùng người dân địa phương.
-            Dự án kết nối du khách với làng nghề truyền thống thông qua các hoạt động như đan lát, làm gốm, workshop thủ
-            công và lưu trú nhà cổ.
-            Khởi nguồn từ những chuyến đi thực tế đến các làng nghề đang dần mai một, “Về Làng” hướng đến bảo tồn giá
-            trị văn hoá, đồng thời tạo sân chơi trải nghiệm ý nghĩa cho người trẻ. Dự án hiện triển khai tour tại Bao
-            La, Phước Tích, Thanh Tiên và làng Sình, với định hướng mở rộng đến nhiều làng nghề khác trong tương lai.
-            Sứ mệnh của “Về Làng” là đưa du khách trở về với nét đẹp nguyên bản của văn hoá Việt, tạo nên những hành
+            <strong>Hoa Việt Travel</strong> là đơn vị lữ hành trẻ tại Huế, được hình thành với mong muốn mang đến cho
+            du khách những
+            hành trình chân thật và giàu trải nghiệm. Với đội ngũ nhân viên năng động, tận tâm và chuyên nghiệp, chúng
+            tôi
+            cam kết cung cấp dịch vụ uy tín, chất lượng và thân thiện trong từng tour.
+            <!-- <br><br> -->
+            Hoa Việt Travel hiện là đơn vị đồng hành triển khai dự án <strong>“Về Làng”</strong> – mô hình du lịch trải
+            nghiệm văn hoá và làng nghề
+            miền Trung. Dự án mang đến không gian đắm chìm, nơi du khách làm cùng – ăn cùng – sống cùng người dân địa
+            phương thông
+            qua các hoạt động như đan lát, làm gốm, workshop thủ công và lưu trú nhà cổ...
+            <br><br>
+            <strong>Sứ mệnh của chúng tôi</strong> là đưa du khách trở về với nét đẹp nguyên bản của văn hoá Việt, tạo
+            nên những hành
             trình chân thật và giàu cảm xúc, đồng thời góp phần phát triển du lịch bền vững và mang lại lợi ích cho cộng
-            đồng địa phương.
+            đồng địa phương, với các tour đang triển khai tại Bao La, Phước Tích, Thanh Tiên và làng Sình.
+            <br><br>
+            <strong>Hoa Việt Travel – đồng hành cùng bạn khám phá vẻ đẹp nguyên bản của văn hoá Việt.</strong>
         </p>
     </section>
 
@@ -139,6 +151,8 @@
 
             <div id="tourSchedule" class="text-sm leading-relaxed"></div>
 
+            <h4 class="text-lg font-semibold mt-2 mb-2">Giá tour</h4>
+            <div id="tourPrice" class="text-sm leading-relaxed"></div>
         </div>
 
     </div>
@@ -195,7 +209,13 @@
             </div>
             <div>
                 <h4 class="font-bold mb-2">Mạng xã hội</h4>
-                <p>Facebook | Instagram | YouTube</p>
+                <p>
+                    <a href="https://www.facebook.com/profile.php?id=61584036741330&locale=vi_VN" target="_blank"
+                        class="text-white-600 hover:underline">
+                        Facebook
+                    </a>
+                    | Instagram | YouTube | Tiktok
+                </p>
             </div>
             <div>
                 <h4 class="font-bold mb-2">Liên kết nhanh</h4>
@@ -229,7 +249,12 @@
                     "phuoctich2.jpg",
                     "phuoctich3.jpg",
                     "phuoctich4.jpg"
-                ]
+                ],
+                price: `
+                •   Nhóm 1–5 người: 1.968.000 đồng/khách<br>
+                •   Nhóm 5–10 người: 1.804.000 đồng/khách<br>
+                •   Nhóm 10–15 người: 1.640.000 đồng/khách<br>`
+
             },
             baola: {
                 name: "Làng mây tre đan Bao La",
@@ -245,7 +270,11 @@
                     "baola1.jpg",
                     "baola2.jpg",
                     "baola3.jpg"
-                ]
+                ],
+                price: `
+                •   Nhóm 1–5 người: 516.000 đồng/khách<br>
+                •   Nhóm 5–10 người: 473.000 đồng/khách<br>
+                •   Nhóm 10–15 người: 430.000 đồng/khách<br>`
             },
             lanhsinh: {
                 name: "Làng Sình",
@@ -261,7 +290,11 @@
                     "langsinh1.jpg",
                     "langsinh2.jpg",
                     "langsinh3.jpg"
-                ]
+                ],
+                price: `
+                •   Nhóm 1–5 người: 492.000 đồng/khách<br>
+                •   Nhóm 5–10 người: 451.000  đồng/khách<br>
+                •   Nhóm 10–15 người: 410.000 đồng/khách<br>`
             },
             thanhtien: {
                 name: "Làng hoa giấy Thanh Tiên",
@@ -277,7 +310,11 @@
                     "thanhtien1.jpg",
                     "thanhtien2.jpg",
                     "thanhtien3.jpg"
-                ]
+                ],
+                price: `
+                •   Nhóm 1–5 người: 636.000 đồng/khách<br>
+                •   Nhóm 5–10 người: 583.000 đồng/khách<br> 
+                •   Nhóm 10–15 người: 530.000 đồng/khách<br>`
             }
         };
 
@@ -295,6 +332,7 @@
             document.getElementById("tourTitle").textContent = tours[id].name;
             document.getElementById("tourStory").textContent = tours[id].story;
             document.getElementById("tourSchedule").innerHTML = tours[id].schedule;
+            document.getElementById("tourPrice").innerHTML = tours[id].price;
 
             const imgGroup = document.getElementById("tourImageGroup");
             imgGroup.innerHTML = ""; // xóa ảnh cũ nếu có
@@ -375,4 +413,3 @@
 </body>
 
 </html>
-
